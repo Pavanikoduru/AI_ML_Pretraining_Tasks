@@ -1,0 +1,22 @@
+Dataset:
+- Healthcare FAQs and dialogue data collected from open datasets like MedQuAD or COVID QA.
+- Appointment and prescription data stored in DynamoDB.
+
+Preprocessing Steps:
+1. Text cleaning and tokenization.
+2. Intent classification and entity recognition setup.
+3. Train NLP model using BERT or Rasa NLU.
+
+Model Details:
+- BERT fine-tuned for healthcare QA.
+- Model deployed using AWS Lambda for scalability.
+
+Deployment:
+- Web interface built using Streamlit or React.
+- Backend: Flask/FastAPI connected to hospital APIs.
+- Monitoring via AWS CloudWatch / Azure Monitor.
+
+Future Improvements:
+- Add emotion detection.
+- Enable voice assistant integration.
+- Connect to EHR systems for medical record retrieval.
