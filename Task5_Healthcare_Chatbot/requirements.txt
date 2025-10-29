@@ -1,0 +1,10 @@
+flask
+fastapi
+transformers
+torch
+tensorflow
+rasa
+streamlit
+boto3
+requests
+uvicorn
