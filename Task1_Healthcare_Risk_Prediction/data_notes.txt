@@ -1,0 +1,19 @@
+Dataset: Synthetic Hospital Readmission Data
+
+Columns:
+- patient_id
+- age
+- gender
+- blood_pressure
+- glucose_level
+- heart_rate
+- past_visits
+- days_since_last_visit
+- readmission_within_30_days (target)
+
+Preprocessing Steps:
+1. Remove missing values and invalid records.
+2. Normalize numeric columns.
+3. Encode gender (0 = Male, 1 = Female).
+4. Split into training and testing sets (80/20).
+5. Store cleaned data in AWS S3.
