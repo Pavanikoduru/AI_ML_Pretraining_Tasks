@@ -1,0 +1,19 @@
+Dataset: LIDAR and camera data from warehouse environment.
+
+Sensors:
+- LIDAR: Measures distance to obstacles in 360°
+- Camera: Captures RGB images of surroundings
+
+Models:
+1. CNN Model for Obstacle Detection
+   - Input: Image frames from camera
+   - Output: Bounding boxes or obstacle labels
+
+2. RL (Reinforcement Learning) Model for Path Optimization
+   - Input: Obstacle map, current position
+   - Output: Optimal movement direction (forward, left, right)
+
+Cloud Integration:
+- AWS Greengrass connects robots to AWS Cloud.
+- IoT messages transmitted via MQTT.
+- Monitoring via AWS CloudWatch (path accuracy, collision alerts).
