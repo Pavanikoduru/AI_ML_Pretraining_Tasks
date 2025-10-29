@@ -1,0 +1,9 @@
+opencv-python
+numpy
+pandas
+torch
+torchvision
+tensorflow
+boto3
+paho-mqtt
+matplotlib
