@@ -1,0 +1,20 @@
+Dataset: Images from assembly line camera feed.
+
+Classes:
+- 0: Non-defective product
+- 1: Defective product
+
+Preprocessing Steps:
+1. Resize images to 224x224 pixels.
+2. Normalize pixel values (0–1 range).
+3. Apply data augmentation (rotation, flipping).
+4. Split dataset into 80% training and 20% testing.
+
+Model Details:
+- CNN or YOLO-based object detection.
+- Trained on AWS SageMaker with GPU instance.
+- Model exported as .pt or .onnx file for edge deployment.
+
+Deployment:
+- Edge inference using AWS IoT Greengrass.
+- Real-time defect alerts sent to AWS CloudWatch or factory dashboard.
