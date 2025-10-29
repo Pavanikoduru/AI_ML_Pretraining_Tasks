@@ -41,32 +41,3 @@ Spots patients likely to face serious trouble before problems arise.
 Keeps people out of the hospital again while boosting how well they’re looked after.
 
 Hospitals can better share supplies thanks to this. It means smarter spending, so care isn’t impacted by shortages.
-
-
-Architecture Diagram:
-
-[Patient Records / Lab Data]
-
-↓
-
-[AWS S3 Storage]
-
-↓
-
-[ETL Preprocessing (AWS Glue)]
-
-↓
-
-[Model Training (XGBoost on SageMaker)]
-
-↓
-
-[Flask API / Streamlit Dashboard]
-
-↓
-
-[Doctors Receive Alerts]
-
-↓
-
-[Monitoring via CloudWatch]
